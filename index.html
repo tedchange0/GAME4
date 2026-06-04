@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>窒息檔案</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>窒息檔案</h1>
+      <button class="reset-btn" id="resetBtn" type="button">重置</button>
+    </header>
+
+    <section class="status" aria-label="清除進度">
+      <div class="status-row">
+        <span>菸害元素連連消</span>
+        <span><strong id="progressText">0%</strong> / 目標 100%</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    </section>
+
+    <section class="board-wrap">
+      <div class="board" id="board" aria-label="毒素方塊盤面"></div>
+    </section>
+
+    <section class="toast" id="toast">
+      滑動相鄰方塊，連成 3 個以上相同毒素即可消除。
+    </section>
+  </main>
+
+  <section class="overlay show" id="startScreen">
+    <h2>數據繩索鎖定</h2>
+    <p>焦油、一氧化碳與重金屬等有害物質把健康檔案層層纏住。滑動交換毒素方塊，連成 3 個以上即可轉化為清淨氧氣。</p>
+    <button class="primary-btn" id="startBtn" type="button">START</button>
+  </section>
+
+  <section class="overlay" id="winScreen">
+    <h2>健康檔案釋放</h2>
+    <p>你已完成 100% 清除進度，灰黑色數據繩索被清淨氧氣瓦解。</p>
+    <button class="primary-btn" id="againBtn" type="button">再玩一次</button>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
